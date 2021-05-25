@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  {{> head }}
+    {{> header }}
+      <div class="row form-inline justify-content-md-center">
+        <div class="bg-white text-dark justify-content-md-center" style="margin-top: 30px; width: 800px; height: 400px">
+          <canvas  id="myChart1" ></canvas>
+        </div>
+        <div class="bg-white text-dark justify-content-md-center offset-md-1" style="margin-top: 30px; width: 800px; height: 400px">
+          <canvas  id="myChart2" ></canvas>
+        </div>
+      </div>
+
+      <div class="row form-inline justify-content-md-center">
+        <div class="bg-white text-dark justify-content-md-center" style="margin-top: 30px; width: 1600px; height: 800px">
+          <canvas  id="myChart3" ></canvas>
+        </div>
+      </div>
+
+      <div class="row form-inline justify-content-md-center">
+        <div class="bg-white text-dark justify-content-md-center" style="margin-top: 30px; margin-left: 88px; width: 800px; height: 400px">
+          <canvas  id="myChart4" ></canvas>
+        </div>
+        <div class="circle">
+          <p id="circle1"></p>
+        </div>
+        <div class="circle">
+          <p id="circle2"></p>
+        </div>
+      </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="/javascripts/browser-charts.js" type="module"></script>
+    {{> footer }}
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  {{> head }}
+    {{> header }}
+
+    <div class="container justify-content-md-center">
+      <div class="text-center">
+        <h1>Students Mode and Median</h1>
+      </div>
+      <table class="table table-striped table-light table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Parameter</th>
+            <th scope="col">Mode</th>
+            <th scope="col">Median</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>Mid-term exams</td>
+            <td>{{mode.mid_term_exam}}</td>
+            <td>{{median.mid_term_exam}}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>Final exam</td>
+            <td>{{mode.final_term_exam}}</td>
+            <td>{{median.final_term_exam}}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>CW 1</td>
+            <td>{{mode.cw1}}</td>
+            <td>{{median.cw1}}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>CW 2</td>
+            <td>{{mode.cw2}}</td>
+            <td>{{median.cw2}}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>Total Points</td>
+            <td>{{mode.total_points}}</td>
+            <td>{{median.total_points}}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>Student Average</td>
+            <td>{{mode.average}}</td>
+            <td>{{median.average}}</td>
+          </tr>
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>Grade</td>
+            <td>{{mode.grade}}</td>
+            <td>{{median.grade}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="justify-content-md-center" style="width: 80%; margin: auto">
+      <div class="text-center">
+        <h1>Students Grades</h1>
+      </div>
+      <table class="table table-striped table-light table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Full name</th>
+            <th scope="col">Mid-term exams(0-100)</th>
+            <th scope="col">Final exam(0-100)</th>
+            <th scope="col">CW 1(0-100)</th>
+            <th scope="col">CW 2(0-100)</th>
+            <th scope="col">Total Points(0-400)</th>
+            <th scope="col">Student Average(0-100)</th>
+            <th scope="col">Grade(F-A+)</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#students}}
+          <tr>
+            <th scope="row">{{index}}</th>
+            <td>{{first_name}} {{last_name}}</td>
+            <td>{{mid_term_exam}}</td>
+            <td>{{final_term_exam}}</td>
+            <td>{{cw1}}</td>
+            <td>{{cw2}}</td>
+            <td>{{total_points}}</td>
+            <td>{{average}}</td>
+            <td>{{grade}}</td>
+          </tr>
+        {{/students}}
+        </tbody>
+      </table>
+    </div>
+
+    {{> footer }}
+  </body>
+</html>

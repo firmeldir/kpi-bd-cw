@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  {{> head }}
+    {{> header }}
+
+    <div class="vertical-center">
+      <div class="container justify-content-md-center" style="text-align: center; font-size: 40px;">
+        <div class="row justify-content-md-center"><*>/export to reserve</div><br>
+        <div class="row justify-content-md-center"><*>/import to restore</div><br>
+      </div>
+    </div>
+
+    {{> footer }}
+  </body>
+</html>
